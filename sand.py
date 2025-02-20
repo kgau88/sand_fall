@@ -21,7 +21,6 @@ def do_move(grid, x_from, y_from, x_to, y_to):
     bounds, and x_to,y_to is empty.
     (i.e. a different function checks that this is a
     legal move before do_move() is called)
-    (tests and code provided)
     >>> grid = Grid.build([['r', 's', 's'], [None, None, None]])
     >>> do_move(grid, 1, 0, 1, 1)
     [['r', None, 's'], [None, 's', None]]
@@ -102,7 +101,6 @@ def do_gravity(grid, x, y):
     Try to make one move, trying them in this order:
     move down, move down-left, move down-right.
     Return the grid in all cases.
-    (tests provided, code TBD)
     >>> # not sand
     >>> grid = Grid.build([[None, 's', None], [None, None, None]])
     >>> do_gravity(grid, 0, 0)
@@ -173,7 +171,6 @@ def do_brownian(grid, x, y, brownian):
     Given grid, x,y, and brownian int 0..100.
     Do the random brownian move for that x,y.
     Return the grid.
-    (tests provided, code TBD)
     >>> # Hack: tamper with randrange() to always return 0
     >>> # So we can write a test.
     >>> # This only happens for the Doctest run, not in production.
@@ -304,8 +301,6 @@ fps_label = None
 SIDE = 14  # pixels across of one square (set in main() too)
 SHIFT = 6
 
-
-# provided function to build the GUI
 def make_gui(top, width, height):
     """
     Set up the GUI elements for the Sand window, returning the Canvas to use.
@@ -449,8 +444,6 @@ def do_mouse(event, grid, scale, canvas):
             big_erase(grid, x, y, canvas)
     # print('click', event.x, event.y)
 
-
-# (provided)
 def main():
     args = sys.argv[1:]
 
