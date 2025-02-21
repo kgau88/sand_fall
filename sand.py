@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 """
-Stanford CS106A Sand Project
+Sand Fall Project
 """
 
 import sys
