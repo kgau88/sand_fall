@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 """
-Sand Fall Project
+Sandfall - Class Project
 """
 
 import sys
